@@ -1,0 +1,68 @@
+{
+    "emp_details": [
+        {
+            "emp_id": 0,
+            "emp_Fname": "Om",
+            "emp_Lname": "Patel",
+            "email": "ompatel34003@gmail.com",
+            "job_profile": "intern"
+        },
+        {
+            "emp_id": 1,
+            "emp_Fname": "Jagrat",
+            "emp_Lname": "Patel",
+            "email": "jagratpatel99@gmail.com",
+            "job_profile": "intern"
+        },
+        {
+            "emp_id": 2,
+            "emp_Fname": "Jaivin",
+            "emp_Lname": "Barot",
+            "email": "jaivin@gmail.com",
+            "job_profile": "intern"
+        },
+        {
+            "emp_id": 3,
+            "emp_Fname": "Om1",
+            "emp_Lname": "Patel1",
+            "email": "Ompatel34003@gmail.com",
+            "job_profile": "intern"
+        },
+        {
+            "emp_id": 4,
+            "emp_Fname": "Jagrat1",
+            "emp_Lname": "Patel2",
+            "email": "Jagratpatel99@gmail.com",
+            "job_profile": "intern"
+        },
+        {
+            "emp_id": 5,
+            "emp_Fname": "Jaivin1",
+            "emp_Lname": "Barot1",
+            "email": "jaivin@gmail.com",
+            "job_profile": "intern"
+        },
+        {
+            "emp_id": 6,
+            "emp_Fname": "Om2",
+            "emp_Lname": "Patel3",
+            "email": "omPatel34003@gmail.com",
+            "job_profile": "intern"
+        },
+        {
+            "emp_id": 7,
+            "emp_Fname": "Jagrat2",
+            "emp_Lname": "Patel4",
+            "email": "jagratPatel99@gmail.com",
+            "job_profile": "intern"
+        },
+        {
+            "emp_id": 8,
+            "emp_Fname": "Jaivin2",
+            "emp_Lname": "Barot2",
+            "email": "jaivin1@gmail.com",
+            "job_profile": "intern"
+        }
+    
+]
+}

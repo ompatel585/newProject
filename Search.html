@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="w-full">
+        <!-- <section id="bottom-navigation" class="md:hidden block fixed inset-x-0 bottom-0 z-10 bg-white shadow"> // if shown only tablet/mobile-->
+        <section id="bottom-navigation" class="block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
+            <div id="tabs" class="flex justify-between ">
+                <a href="/" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center">
+                    <span class="tab tab-home block text-lg hover:text-white hover:bg-orange-400 py-2">Home</span>
+                </a>
+                <a href="/Offer" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center">
+                    <span class="tab tab-kategori block text-lg  hover:bg-orange-400 hover:text-white py-2">Offer</span>
+                </a>
+                <a href="/Search" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center">
+                    <span class="tab tab-explore block text-lg  bg-orange-400 text-white py-2">Search</span>
+                </a>
+                <a href="/Blog" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center">
+                    <span class="tab tab-whishlist block text-lg  hover:bg-orange-400 hover:text-white py-2">Blog</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div class="relative">
+        <input type="text" onkeyup="locationUpdater(this)" name="location" id="location" autocomplete="false" placeholder="search location" class="m-5 w-48 h-8 ring-0 focus:ring-0 pl-3 pb-1 border-2 rounded-full">
+        <div id="menu" class="absolute bg-white  top-14 left-5 rounded-lg py-1  w-48 h-fit  shadow-lg ">
+            
+        </div>
+    </div>
+    <div class="flex flex-nowrap p-5 gap-3">
+        {% for dish in dishes %}
+        <div class="bg-red-300 w-48 h-fit rounded-lg shadow-lg p-2">
+            <h1 class="font-bold text-xl">{{dish['name']}}</h1>
+            <div class="flex flex-wrap gap-x-3 ">
+                {% for ingrident in dish['ingredient'] %}
+                <h1>{{ingrident}}</h1>
+                {%endfor%}
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+    
+    <script>
+        //<h1 class="hover:bg-gray-300 pl-3">Ahmedabad</h1>
+        function locationUpdater(element)
+        {
+            let fetchRes = fetch("/location?name="+element.value);
+            fetchRes.then(res =>
+                res.json()).then(d => {
+                    html = "";
+                    for(i=0;i<d['data'].length;i++)
+                    {
+                        html+= '<h1 onclick="locationSetter(\''+d['data'][i]['name']+'\')" class="hover:bg-gray-300 pl-3">'+d['data'][i]['name']+'</h1>'
+                    }
+                    document.getElementById("menu").innerHTML = html
+                })
+        }
+        function locationSetter(location)
+        {
+            document.getElementById("location").value = location;
+            //document.getElementById("location").disabled = true;
+            document.getElementById("menu").innerHTML = ""
+        }
+    </script>
+</body>
+</html>

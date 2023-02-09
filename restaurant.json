@@ -1,0 +1,42 @@
+{
+    "restaurant1":
+    {
+        "name" : "Pizza house",
+        "items": ["Pizza"],
+        "address": "Ahmedabad",
+        "time": "12:00 PM to 12:00 AM",
+        "about": "Station Bar is a one-stop destination for people who want to have a fun time with their families and friends. The eye-catching colorful decor just does not ends there. We have a spectacular outdoor seating for romantic evenings."
+    },
+    "restaurant2":
+    {
+        "name" : "Pizza Hut",
+        "items": ["Pizza ,Burger"],
+        "address": "Kalol",
+        "time": "12:00 PM to 11:00 PM",
+        "about": "Station Bar is a one-stop destination for people who want to have a fun time with their families and friends. The eye-catching colorful decor just does not ends there. We have a spectacular outdoor seating for romantic evenings."
+    },
+    "restaurant3":
+    {
+        "name" : "La Pino'Z",
+        "items": ["Pizza, Garlic bread, Pasta , spagetti"],
+        "address": "Ahmedabad",
+        "time": "12:00 PM to 12:00 AM",
+        "about": "La Pino'Z is a one-stop destination for people who want to have a fun time with their families and friends. The eye-catching colorful decor just does not ends there. We have a spectacular outdoor seating for romantic evenings."
+    },
+    "restaurant4":
+    {
+        "name" : "Domino's Pizza",
+        "items": ["Pizza ,Burger,Garlic bread, spagetti,french fries"],
+        "address": "Kalol",
+        "time": "12:00 PM to 11:00 PM",
+        "about": "Domino's is a one-stop destination for people who want to have a fun time with their families and friends. The eye-catching colorful decor just does not ends there. We have a spectacular outdoor seating for romantic evenings."
+    },
+    "restaurant5":
+    {
+        "name" : "Patel Restaurant",
+        "items": ["Gujarati thali, Punjabi thali , Kathiyavali thali, Soup, Starter"],
+        "address": "Kalol",
+        "time": "12:00 PM to 11:00 PM",
+        "about": "Patel Restaurant is a one-stop destination for people who want to have a fun time with their families and friends. The eye-catching colorful decor just does not ends there. We have a spectacular outdoor seating for romantic evenings."
+    }
+}

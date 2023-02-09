@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>  
+    <title>Document</title>
+</head>
+<body background="">
+    <div class="w-full">
+        <!-- <section id="bottom-navigation" class="md:hidden block fixed inset-x-0 bottom-0 z-10 bg-white shadow"> // if shown only tablet/mobile-->
+        <section id="bottom-navigation" class="block fixed inset-x-0 bottom-0 z-10 bg-white shadow">
+            <div id="tabs" class="flex justify-between ">
+                <a href="/" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center">
+                    <span class="tab tab-home block text-lg hover:text-white hover:bg-orange-400 py-2">Home</span>
+                </a>
+                <a href="/Offer" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center">
+                    <span class="tab tab-kategori block text-lg  hover:bg-orange-400 hover:text-white py-2">Offer</span>
+                </a>
+                <a href="/Search" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center">
+                    <span class="tab tab-explore block text-lg  hover:bg-orange-400 hover:text-white py-2">Search</span>
+                </a>
+                <a href="/Blog" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center">
+                    <span class="tab tab-whishlist block text-lg  hover:bg-orange-400 hover:text-white py-2">Blog</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div class="mt-5 w-full h-20 bg-gray-300 ">
+        <h1 class="text-orange-600 mr-4 mt-2 opacity-90 text-2xl font-bold ml-8">atoz</h1>
+    </div>
+
+    <div class="w-full h-full">
+        <div class=""></div>
+        <div class="h-[400px] w-[350px] bg-white mx-auto my-20 shadow-lg shadow-gray-400">
+            <div class="p-5">
+                <form method="post">
+                    
+                    <div class="flex">
+                        <div>
+                            <h1 class="mt-4 mr-2">Username</h1>
+                        </div>
+                        <div class="h-fit p-3  w-[320px]  mt-1 mx-auto justify-between  border-[1px] border-gray-100 shadow-md shadow-gray-400 max-w-full ">
+                            <input type="text" id="username" name="username" placeholder="" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="flex mt-3">
+                        <div>
+                            <h1 class="mt-4 mr-[42px]">Email</h1>
+                        </div>
+                        <div class="h-fit p-3  w-[320px]  mt-2 mx-auto max-w-full justify-between  border-gray-100 shadow-md shadow-gray-400 px-4 border-[1px]">
+                            <input type="text" id="email" name="email" placeholder="">
+                        </div>
+                    </div>
+                    <div class="flex mt-3">
+                        <div>
+                            <h1 class="mt-4 mr-[26px]">Contact</h1>
+                        </div>
+                        <div class="h-fit p-3  w-[320px]  mt-2 mx-auto max-w-full justify-between  border-gray-100 shadow-md shadow-gray-400 px-4 border-[1px]">
+                            <input type="contact" id="contact" name="contact" placeholder="">
+                        </div>
+                    </div>
+                    <div class="flex mt-3">
+                        <div>
+                            <h1 class="mt-4 mr-[13px]">Password</h1>
+                        </div>
+                        <div class="h-fit p-3  w-[320px]  mt-2 mx-auto max-w-full justify-between  border-gray-100 shadow-md shadow-gray-400 px-4 border-[1px]">
+                            <input type="password" id="password" name="password" placeholder="">
+                        </div>
+                    </div>
+                    <div class="pt-5 ml-[40%] max-w-full">
+                        <button type="submit"   class="bg-red-500 cursor-pointer px-4 mb-2 text-center">Sign Up</button>
+                    </div>
+                    <div>
+                        <h1 class="text-center">Already have account?</h1>
+                    </div>
+                    <div>
+                        <h1 class="text-center ml-4 underline text-blue-400"><a href="/SignIn">Sign In</a></h1>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

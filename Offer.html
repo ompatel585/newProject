@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="new.css">
+    <style>
+        body::-webkit-scrollbar {
+        display: none;
+        }
+        .scroller::-webkit-scrollbar {
+        display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="w-full mb-10">
+        <!-- <section id="bottom-navigation" class="md:hidden block fixed inset-x-0 bottom-0 z-10 bg-white shadow"> // if shown only tablet/mobile-->
+        <section id="bottom-navigation" class="block fixed md:hidden inset-x-0 bottom-0 z-10 bg-white shadow">
+            <div id="tabs" class="flex justify-between ">
+                <a href="/" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center">
+                    <span class="tab tab-home block text-lg  hover:bg-orange-500 hover:text-white py-2">Home</span>
+                </a>
+                <a href="/Offer" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center">
+                    <span class="tab tab-kategori block text-lg text-white bg-orange-500 hover:text-white py-2">Offer</span>
+                </a>
+                <a href="/Search" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center">
+                    <span class="tab tab-explore block text-lg  hover:bg-orange-500 hover:text-white py-2">Search</span>
+                </a>
+                <a href="/Blog" class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center">
+                    <span class="tab tab-whishlist block text-lg  hover:bg-orange-500 hover:text-white py-2">Blog</span>
+                </a>
+            </div>
+        </section>
+        <div class="w-full h-full">
+            <div class="bg-orange-500 w-full h-fit pt-3 p-4">
+                <div class="">
+                    <h1 class="text-white font-semibold text-3xl mb-3">Offers for you</h1>
+                </div>
+                <div>
+                    <h1 class="text-white text-xl leading-[1.2rem]">Explore top deals and offers exclusively for you!</h1>
+                </div>
+            </div>
+            <div class="flex my-1 px-2">
+                <div class="mx-2 mr-4">
+                    <h1>Restaurant offers</h1>
+                </div>
+                <div>
+                    <h1>Payment offers/Coupons</h1>
+                </div>
+            </div>
+            <div>
+                <div class="mt-[17px] text-[24px] font-[600] h-[28.8px] px-4">
+                    <h1>All offers (1401)</h1>
+                </div>
+                <div class="mt-[4px] text-[16px] font-[300] h-[19.2px] px-4">
+                    <h1>All offers and deals, from restaurants near you</h1>
+                </div>
+            </div>
+            <div class="scroller h-fit overflow-x-auto grid grid-cols-2 md:flex w-screen gap-5 px-5 py-5">
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[17px] text-[24px] font-[600] h-[28.8px] px-4 pb-10 ">
+                <h1>Flat 5% off</h1>
+            </div>
+            <div class="scroller h-fit overflow-x-auto grid grid-cols-2 md:flex w-screen gap-5 px-5 py-5">
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-none w-fit max-w-[10rem] rounded-lg overflow-hidden shadow-lg scale-100 hover:scale-110 transtion-all duration-300">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/eshwwdz6mdf3khmmoehs" alt="" class="w-full"></img>
+                    <div class="w-full h-fit py-2 px-2">
+                        <div class=" text-lg font-medium break-words block">Chai Talap</div>
+                        <div class=" text-sm font-thin  block" title="Beverages, Fast Food, Snacks">Beverages, Fast Food, Snacks</div>
+                        <div class="flex w-full mt-1">
+                            <div class="w-[16.7px] h-[14.4px] mr-3">3.8</div>
+                            <div class="flex w-fit mt-1.5 mb-1 mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#f97316" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="mr-1" viewBox="0 0 16 16">
+                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                        <div class="flex justify-between w-full mt-1 pr-1">
+                            <div class="text-sm">33 MINS</div>
+                            <div class="mx-1">•</div>
+                            <div class="text-sm">₹400 FOR TWO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
